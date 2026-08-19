@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Computer Site</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOGIN ================= -->
+
+<div id="loginPage" class="loginPage">
+
+    <div class="loginBox rgb">
+
+        <div class="logo">⚡ Computer Site</div>
+
+        <h1>خوش آمدی 👋</h1>
+
+        <p>
+            سایت بررسی، مقایسه و سرهم‌بندی کامپیوتر
+        </p>
+
+        <input
+            id="username"
+            type="text"
+            placeholder="نام کاربری"
+        >
+
+        <input
+            id="password"
+            type="password"
+            placeholder="رمز عبور"
+        >
+
+        <button onclick="loginUser()">
+            👤 ورود
+        </button>
+
+        <button onclick="loginGuest()" class="guest">
+            👻 ورود به عنوان مهمان
+        </button>
+
+        <div class="creatorInfo">
+            👑 ورود سازنده
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SITE ================= -->
+
+<div id="site" class="hidden">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <div class="brand">
+            ⚡ Computer Site
+        </div>
+
+        <nav>
+
+            <button onclick="showPage('home')">
+                🏠 خانه
+            </button>
+
+            <button onclick="showPage('build')">
+                🛠️ سرهم‌بندی
+            </button>
+
+            <button onclick="showPage('parts')">
+                🧩 قطعات
+            </button>
+
+            <button onclick="showPage('compare')">
+                ⚔️ مقایسه
+            </button>
+
+            <button onclick="showPage('pcLaptop')">
+                🖥️ PC / 💻 Laptop
+            </button>
+
+            <button onclick="showPage('community')">
+                💬 انجمن
+            </button>
+
+            <button onclick="showPage('support')">
+                🆘 پشتیبانی
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HOME ================= -->
+
+    <main>
+
+        <section id="home" class="page active">
+
+            <div class="hero">
+
+                <span class="version">
+                    COMPUTER SITE 1.0
+                </span>
+
+                <h1>
+                    کامپیوترت رو
+                    <span>خودت بساز</span>
+                </h1>
+
+                <p>
+                    قطعات کامپیوتر را بررسی، مقایسه و انتخاب کن.
+                </p>
+
+            </div>
+
+
+            <div class="homeCards">
+
+                <div
+                    class="homeCard rgb"
+                    onclick="showPage('build')"
+                >
+
+                    <div class="emoji">
+                        🛠️
+                    </div>
+
+                    <h2>
+                        سرهم‌بندی کامپیوتر
+                    </h2>
+
+                    <p>
+                        حتی اگر هیچ چیزی درباره قطعات نمی‌دانی،
+                        مرحله‌به‌مرحله کامپیوترت را بساز.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="homeCard rgb"
+                    onclick="showPage('parts')"
+                >
+
+                    <div class="emoji">
+                        🧩
+                    </div>
+
+                    <h2>
+                        قطعات کامپیوتر
+                    </h2>
+
+                    <p>
+                        CPU، GPU، RAM، SSD، مادربرد،
+                        پاور و تمام قطعات دیگر.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="homeCard rgb"
+                    onclick="showPage('compare')"
+                >
+
+                    <div class="emoji">
+                        ⚔️
+                    </div>
+
+                    <h2>
+                        مقایسه قطعات
+                    </h2>
+
+                    <p>
+                        دو قطعه را انتخاب کن و مشخصاتشان
+                        را کنار هم ببین.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="homeCard rgb"
+                    onclick="showPage('pcLaptop')"
+                >
+
+                    <div class="emoji">
+                        🖥️💻
+                    </div>
+
+                    <h2>
+                        PC در برابر Laptop
+                    </h2>
+
+                    <p>
+                        ببین برای نیاز تو کامپیوتر رومیزی
+                        بهتر است یا لپ‌تاپ.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BUILD ================= -->
+
+        <section id="build" class="page">
+
+            <div class="pageTitle">
+
+                <h1>
+                    🛠️ سرهم‌بندی کامپیوتر
+                </h1>
+
+                <p>
+                    برای ساخت کامپیوتر، قطعات موردنیازت را انتخاب کن.
+                </p>
+
+            </div>
+
+
+            <div class="buildBox rgb">
+
+                <label>
+                    🎯 کاربرد سیستم
+
+                    <select id="usage">
+
+                        <option>
+                            گیمینگ
+                        </option>
+
+                        <option>
+                            درس و مدرسه
+                        </option>
+
+                        <option>
+                            برنامه‌نویسی
+                        </option>
+
+                        <option>
+                            تدوین ویدئو
+                        </option>
+
+                        <option>
+                            کار اداری
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    💰 بودجه
+
+                    <select id="budget">
+
+                        <option>
+                            اقتصادی
+                        </option>
+
+                        <option>
+                            متوسط
+                        </option>
+
+                        <option>
+                            قدرتمند
+                        </option>
+
+                        <option>
+                            حرفه‌ای
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    🧠 پردازنده
+
+                    <select id="buildCPU">
+
+                        <option>
+                            Ryzen 5 5600
+                        </option>
+
+                        <option>
+                            Core i5-12400
+                        </option>
+
+                        <option>
+                            Ryzen 5 7600
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    🎮 کارت گرافیک
+
+                    <select id="buildGPU">
+
+                        <option>
+                            RTX 3060
+                        </option>
+
+                        <option>
+                            RTX 4060
+                        </option>
+
+                        <option>
+                            RX 7600
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    🧮 رم
+
+                    <select id="buildRAM">
+
+                        <option>
+                            16GB DDR4
+                        </option>
+
+                        <option>
+                            32GB DDR4
+                        </option>
+
+                        <option>
+                            16GB DDR5
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    💾 SSD
+
+                    <select id="buildSSD">
+
+                        <option>
+                            500GB NVMe
+                        </option>
+
+                        <option>
+                            1TB NVMe
+                        </option>
+
+                        <option>
+                            2TB NVMe
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    ⚡ پاور
+
+                    <select id="buildPSU">
+
+                        <option>
+                            550W Bronze
+                        </option>
+
+                        <option>
+                            650W Gold
+                        </option>
+
+                        <option>
+                            750W Gold
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+                    🌬️ خنک‌کننده
+
+                    <select id="buildCooler">
+
+                        <option>
+                            DeepCool AK400
+                        </option>
+
+                        <option>
+                            DeepCool AK620
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+            <button
+                class="mainButton"
+                onclick="checkBuild()"
+            >
+                🔍 بررسی سیستم
+            </button>
+
+
+            <div id="buildResult"></div>
+
+        </section>
+
+
+        <!-- ================= PARTS ================= -->
+
+        <section id="parts" class="page">
+
+            <div class="pageTitle">
+
+                <h1>
+                    🧩 دسته‌بندی قطعات
+                </h1>
+
+                <p>
+                    یک قطعه را انتخاب کن تا صفحه اختصاصی آن را ببینی.
+                </p>
+
+            </div>
+
+
+            <div id="partsGrid" class="partsGrid"></div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section id="products" class="page">
+
+            <div class="pageTitle">
+
+                <h1 id="productsTitle">
+                    قطعات
+                </h1>
+
+                <p>
+                    جستجو و بررسی قطعات
+                </p>
+
+            </div>
+
+
+            <input
+                id="search"
+                class="search"
+                placeholder="🔎 مثلاً DeepCool AK400"
+                oninput="searchProduct()"
+            >
+
+
+            <div
+                id="productsGrid"
+                class="productsGrid"
+            ></div>
+
+        </section>
+
+
+        <!-- ================= COMPARE ================= -->
+
+        <section id="compare" class="page">
+
+            <div class="pageTitle">
+
+                <h1>
+                    ⚔️ مقایسه قطعات
+                </h1>
+
+                <p>
+                    دو یا سه قطعه را انتخاب کن.
+                </p>
+
+            </div>
+
+
+            <div class="compareBox rgb">
+
+                <select
+                    id="compareCategory"
+                    onchange="loadCompare()"
+                ></select>
+
+
+                <div class="compareInputs">
+
+                    <select id="compareOne"></select>
+
+                    <select id="compareTwo"></select>
+
+                    <select id="compareThree">
+
+                        <option value="-1">
+                            بدون قطعه سوم
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="mainButton"
+                    onclick="runCompare()"
+                >
+                    ⚔️ مقایسه کن
+                </button>
+
+
+                <div
+                    id="compareResult"
+                    class="compareResult"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PC LAPTOP ================= -->
+
+        <section id="pcLaptop" class="page">
+
+            <div class="pageTitle">
+
+                <h1>
+                    🖥️ PC در برابر 💻 Laptop
+                </h1>
+
+                <p>
+                    کدام برای تو مناسب‌تر است؟
+                </p>
+
+            </div>
+
+
+            <div class="vs">
+
+                <div class="vsCard rgb">
+
+                    <div class="bigEmoji">
+                        🖥️
+                    </div>
+
+                    <h2>
+                        کامپیوتر رومیزی
+                    </h2>
+
+                    <p>✅ قدرت بیشتر</p>
+                    <p>✅ ارتقای آسان‌تر</p>
+                    <p>✅ خنک‌کنندگی بهتر</p>
+                    <p>✅ مناسب گیمینگ</p>
+
+                </div>
+
+
+                <div class="vsCard rgb">
+
+                    <div class="bigEmoji">
+                        💻
+                    </div>
+
+                    <h2>
+                        لپ‌تاپ
+                    </h2>
+
+                    <p>✅ قابل حمل</p>
+                    <p>✅ کم‌جا</p>
+                    <p>✅ دارای صفحه‌نمایش</p>
+                    <p>✅ مناسب جابه‌جایی</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMMUNITY ================= -->
+
+        <section id="community" class="page">
+
+            <div class="pageTitle">
+
+                <h1>
+                    💬 انجمن
+                </h1>
+
+                <p>
+                    نظر خودت را با بقیه به اشتراک بگذار.
+                </p>
+
+            </div>
+
+
+            <div class="communityBox rgb">
+
+                <button
+                    class="likeButton"
+                    onclick="likeSite()"
+                >
+                    ❤️ لایک
+                    <span id="likes">
+                        0
+                    </span>
+                </button>
+
+
+                <textarea
+                    id="comment"
+                    placeholder="کامنت خودت را بنویس..."
+                ></textarea>
+
+
+                <button
+                    class="mainButton"
+                    onclick="addComment()"
+                >
+                    💬 ارسال کامنت
+                </button>
+
+
+                <div id="comments"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUPPORT ================= -->
+
+        <section id="support" class="page">
+
+            <div class="pageTitle">
+
+                <h1>
+                    🆘 پشتیبانی
+                </h1>
+
+                <p>
+                    اگر مشکلی داشتی از اینجا پیام بده.
+                </p>
+
+            </div>
+
+
+            <div class="supportBox rgb">
+
+                <textarea
+                    id="supportText"
+                    placeholder="مشکل یا سوالت را بنویس..."
+                ></textarea>
+
+
+                <button
+                    class="mainButton"
+                    onclick="sendSupport()"
+                >
+                    📩 ارسال
+                </button>
+
+
+                <div id="supportResult"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        ⚡ Computer Site 1.0
+
+        <br>
+
+        🖥️ Windows | 📱 Mobile
+
+    </footer>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
