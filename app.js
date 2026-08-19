@@ -1,9 +1,14 @@
-// ==========================================
+// =====================================================
 // COMPUTER SITE 1.0
-// JavaScript
-// ==========================================
+// FINAL app.js
+// =====================================================
+
+// =====================================================
+// DATABASE
+// =====================================================
 
 const categories = {
+
     cpu: {
         name: "🧠 CPU — پردازنده",
         icon: "🧠",
@@ -16,7 +21,7 @@ const categories = {
                     "رشته": "12",
                     "فرکانس": "4.4 GHz",
                     "سوکت": "LGA1700",
-                    "امتیاز": 82
+                    "امتیاز": 86
                 }
             },
             {
@@ -27,7 +32,7 @@ const categories = {
                     "رشته": "12",
                     "فرکانس": "4.4 GHz",
                     "سوکت": "AM4",
-                    "امتیاز": 78
+                    "امتیاز": 82
                 }
             },
             {
@@ -38,7 +43,7 @@ const categories = {
                     "رشته": "12",
                     "فرکانس": "5.1 GHz",
                     "سوکت": "AM5",
-                    "امتیاز": 90
+                    "امتیاز": 94
                 }
             }
         ]
@@ -55,7 +60,7 @@ const categories = {
                     "حافظه": "12GB",
                     "نوع حافظه": "GDDR6",
                     "مصرف": "170W",
-                    "امتیاز": 76
+                    "امتیاز": 78
                 }
             },
             {
@@ -65,7 +70,7 @@ const categories = {
                     "حافظه": "8GB",
                     "نوع حافظه": "GDDR6",
                     "مصرف": "115W",
-                    "امتیاز": 86
+                    "امتیاز": 87
                 }
             },
             {
@@ -75,7 +80,7 @@ const categories = {
                     "حافظه": "8GB",
                     "نوع حافظه": "GDDR6",
                     "مصرف": "165W",
-                    "امتیاز": 82
+                    "امتیاز": 84
                 }
             }
         ]
@@ -92,7 +97,7 @@ const categories = {
                     "ظرفیت": "8GB",
                     "نسل": "DDR3",
                     "سرعت": "1600MHz",
-                    "امتیاز": 45
+                    "امتیاز": 48
                 }
             },
             {
@@ -112,7 +117,7 @@ const categories = {
                     "ظرفیت": "16GB",
                     "نسل": "DDR5",
                     "سرعت": "5600MHz",
-                    "امتیاز": 91
+                    "امتیاز": 92
                 }
             }
         ]
@@ -129,7 +134,7 @@ const categories = {
                     "ظرفیت": "500GB",
                     "نوع": "NVMe",
                     "خواندن": "3500MB/s",
-                    "امتیاز": 75
+                    "امتیاز": 76
                 }
             },
             {
@@ -139,7 +144,7 @@ const categories = {
                     "ظرفیت": "1TB",
                     "نوع": "NVMe",
                     "خواندن": "3500MB/s",
-                    "امتیاز": 86
+                    "امتیاز": 87
                 }
             }
         ]
@@ -156,7 +161,7 @@ const categories = {
                     "ظرفیت": "1TB",
                     "سرعت": "7200RPM",
                     "نوع": "SATA",
-                    "امتیاز": 60
+                    "امتیاز": 65
                 }
             },
             {
@@ -166,7 +171,7 @@ const categories = {
                     "ظرفیت": "2TB",
                     "سرعت": "7200RPM",
                     "نوع": "SATA",
-                    "امتیاز": 64
+                    "امتیاز": 69
                 }
             }
         ]
@@ -183,7 +188,7 @@ const categories = {
                     "سوکت": "AM4",
                     "RAM": "DDR4",
                     "PCIe": "4.0",
-                    "امتیاز": 80
+                    "امتیاز": 82
                 }
             },
             {
@@ -193,7 +198,7 @@ const categories = {
                     "سوکت": "LGA1700",
                     "RAM": "DDR4",
                     "PCIe": "4.0",
-                    "امتیاز": 84
+                    "امتیاز": 86
                 }
             },
             {
@@ -203,7 +208,7 @@ const categories = {
                     "سوکت": "AM5",
                     "RAM": "DDR5",
                     "PCIe": "5.0",
-                    "امتیاز": 92
+                    "امتیاز": 93
                 }
             }
         ]
@@ -219,7 +224,7 @@ const categories = {
                 specs: {
                     "توان": "550W",
                     "گواهی": "80+ Bronze",
-                    "امتیاز": 70
+                    "امتیاز": 72
                 }
             },
             {
@@ -228,14 +233,23 @@ const categories = {
                 specs: {
                     "توان": "650W",
                     "گواهی": "80+ Gold",
-                    "امتیاز": 85
+                    "امتیاز": 87
+                }
+            },
+            {
+                name: "750W Gold",
+                price: "قیمت نمونه",
+                specs: {
+                    "توان": "750W",
+                    "گواهی": "80+ Gold",
+                    "امتیاز": 91
                 }
             }
         ]
     },
 
     cooler: {
-        name: "🌬️ CPU Cooler — خنک‌کننده",
+        name: "🌬️ CPU Cooler — فن و خنک‌کننده",
         icon: "🌬️",
         products: [
             {
@@ -243,10 +257,10 @@ const categories = {
                 price: "قیمت نمونه",
                 specs: {
                     "سرعت فن": "500-1850 RPM",
-                    "اندازه": "120mm",
+                    "اندازه فن": "120mm",
                     "صدا": "29 dBA",
                     "سازگاری": "Intel / AMD",
-                    "امتیاز": 84
+                    "امتیاز": 85
                 }
             },
             {
@@ -254,36 +268,10 @@ const categories = {
                 price: "قیمت نمونه",
                 specs: {
                     "سرعت فن": "300-1850 RPM",
-                    "اندازه": "120mm",
+                    "اندازه فن": "120mm",
                     "صدا": "28 dBA",
                     "سازگاری": "Intel / AMD",
-                    "امتیاز": 92
-                }
-            }
-        ]
-    },
-
-    case: {
-        name: "🖥️ Case — کیس",
-        icon: "🖥️",
-        products: [
-            {
-                name: "Gaming Case Airflow",
-                price: "قیمت نمونه",
-                specs: {
-                    "فرم": "ATX",
-                    "فن": "3 عدد",
-                    "امتیاز": 80
-                }
-            },
-            {
-                name: "RGB Gaming Case",
-                price: "قیمت نمونه",
-                specs: {
-                    "فرم": "ATX",
-                    "فن": "4 عدد",
-                    "RGB": "دارد",
-                    "امتیاز": 86
+                    "امتیاز": 93
                 }
             }
         ]
@@ -299,7 +287,7 @@ const categories = {
                 specs: {
                     "اندازه": "120mm",
                     "RGB": "دارد",
-                    "امتیاز": 75
+                    "امتیاز": 78
                 }
             },
             {
@@ -308,7 +296,33 @@ const categories = {
                 specs: {
                     "اندازه": "140mm",
                     "صدا": "کم",
-                    "امتیاز": 82
+                    "امتیاز": 84
+                }
+            }
+        ]
+    },
+
+    case: {
+        name: "🖥️ Case — کیس",
+        icon: "🖥️",
+        products: [
+            {
+                name: "Gaming Airflow Case",
+                price: "قیمت نمونه",
+                specs: {
+                    "فرم": "ATX",
+                    "فن": "3 عدد",
+                    "امتیاز": 81
+                }
+            },
+            {
+                name: "RGB Gaming Case",
+                price: "قیمت نمونه",
+                specs: {
+                    "فرم": "ATX",
+                    "فن": "4 عدد",
+                    "RGB": "دارد",
+                    "امتیاز": 88
                 }
             }
         ]
@@ -337,9 +351,9 @@ const categories = {
                 name: "Arctic MX-4",
                 price: "قیمت نمونه",
                 specs: {
-                    "نوع": "Thermal Paste",
                     "رسانایی": "8.5 W/mK",
-                    "امتیاز": 85
+                    "نوع": "Thermal Paste",
+                    "امتیاز": 86
                 }
             }
         ]
@@ -355,7 +369,7 @@ const categories = {
                 specs: {
                     "استاندارد": "Wi-Fi 6",
                     "Bluetooth": "دارد",
-                    "امتیاز": 85
+                    "امتیاز": 86
                 }
             }
         ]
@@ -371,7 +385,7 @@ const categories = {
                 specs: {
                     "سرعت": "1Gbps",
                     "اتصال": "PCIe",
-                    "امتیاز": 80
+                    "امتیاز": 81
                 }
             }
         ]
@@ -386,7 +400,7 @@ const categories = {
                 price: "قیمت نمونه",
                 specs: {
                     "اتصال": "USB",
-                    "امتیاز": 72
+                    "امتیاز": 73
                 }
             }
         ]
@@ -400,9 +414,9 @@ const categories = {
                 name: "External DVD Writer",
                 price: "قیمت نمونه",
                 specs: {
-                    "نوع": "USB",
-                    "خواندن": "DVD/CD",
-                    "امتیاز": 65
+                    "اتصال": "USB",
+                    "پشتیبانی": "DVD / CD",
+                    "امتیاز": 68
                 }
             }
         ]
@@ -418,8 +432,8 @@ const categories = {
                 specs: {
                     "اندازه": "24 inch",
                     "رزولوشن": "1920×1080",
-                    "نرخ": "75Hz",
-                    "امتیاز": 75
+                    "نرخ نوسازی": "75Hz",
+                    "امتیاز": 77
                 }
             },
             {
@@ -428,8 +442,8 @@ const categories = {
                 specs: {
                     "اندازه": "27 inch",
                     "رزولوشن": "2560×1440",
-                    "نرخ": "144Hz",
-                    "امتیاز": 90
+                    "نرخ نوسازی": "144Hz",
+                    "امتیاز": 92
                 }
             }
         ]
@@ -445,7 +459,7 @@ const categories = {
                 specs: {
                     "نوع": "Mechanical",
                     "RGB": "دارد",
-                    "امتیاز": 85
+                    "امتیاز": 86
                 }
             }
         ]
@@ -461,7 +475,7 @@ const categories = {
                 specs: {
                     "DPI": "8000",
                     "نوع": "Gaming",
-                    "امتیاز": 82
+                    "امتیاز": 83
                 }
             }
         ]
@@ -477,7 +491,7 @@ const categories = {
                 specs: {
                     "صدا": "7.1",
                     "میکروفون": "دارد",
-                    "امتیاز": 83
+                    "امتیاز": 85
                 }
             }
         ]
@@ -493,7 +507,7 @@ const categories = {
                 specs: {
                     "اتصال": "USB",
                     "نوع": "Condenser",
-                    "امتیاز": 84
+                    "امتیاز": 85
                 }
             }
         ]
@@ -509,306 +523,341 @@ const categories = {
                 specs: {
                     "اتصال": "Wireless",
                     "لرزش": "دارد",
-                    "امتیاز": 82
+                    "امتیاز": 83
                 }
             }
         ]
     }
+
 };
 
-
-// ==========================================
+// =====================================================
 // LOGIN
-// ==========================================
+// =====================================================
 
-function login(type) {
+function loginUser() {
 
     const username =
         document.getElementById("username").value.trim();
 
-    const password =
-        document.getElementById("password").value;
+    if (!username) {
 
-    if (type === "creator") {
-
-        if (
-            username === "محمد حسین عطاالهی" &&
-            password === "1392Pq1404"
-        ) {
-
-            enterSite("👑 سازنده");
-
-        } else {
-
-            alert("نام کاربری یا رمز سازنده اشتباه است.");
-        }
-
+        alert("لطفاً نام کاربری را وارد کن 😄");
         return;
     }
 
-    if (type === "user") {
+    enterSite("👤 " + username);
+}
 
-        if (!username) {
-            alert("لطفاً نام کاربری را وارد کن.");
-            return;
-        }
-
-        enterSite("👤 " + username);
-        return;
-    }
+function loginGuest() {
 
     enterSite("👻 مهمان");
 }
 
+function enterSite(user) {
 
-function enterSite(userType) {
+    const loginPage =
+        document.getElementById("loginPage");
 
-    document.getElementById("loginPage")
-        .classList.add("hidden");
+    const site =
+        document.getElementById("site");
 
-    document.getElementById("site")
-        .classList.remove("hidden");
+    if (loginPage) {
+        loginPage.classList.add("hidden");
+    }
 
-    console.log("ورود:", userType);
+    if (site) {
+        site.classList.remove("hidden");
+    }
+
+    localStorage.setItem(
+        "computerSiteUser",
+        user
+    );
 
     showPage("home");
 }
 
-
-// ==========================================
-// PAGE SYSTEM
-// ==========================================
+// =====================================================
+// PAGE NAVIGATION
+// =====================================================
 
 function showPage(pageId) {
 
-    document.querySelectorAll(".page")
-        .forEach(page => page.classList.remove("active"));
+    document
+        .querySelectorAll(".page")
+        .forEach(page => {
+
+            page.classList.remove("active");
+
+        });
 
     const page =
         document.getElementById(pageId);
 
     if (page) {
+
         page.classList.add("active");
-        window.scrollTo(0, 0);
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
     }
 
-    if (pageId === "categories") {
-        loadCategories();
+    if (pageId === "parts") {
+
+        loadParts();
+
     }
 
     if (pageId === "compare") {
+
         loadCompareCategories();
+
     }
+
 }
 
+// =====================================================
+// PARTS
+// =====================================================
 
-// ==========================================
-// CATEGORIES
-// ==========================================
+function loadParts() {
 
-function loadCategories() {
+    const grid =
+        document.getElementById("partsGrid");
 
-    const container =
-        document.getElementById("categoryList");
+    if (!grid) return;
 
-    if (!container) return;
+    grid.innerHTML = "";
 
-    container.innerHTML = "";
+    Object.entries(categories)
+        .forEach(([key, category]) => {
 
-    Object.keys(categories).forEach(key => {
+            const card =
+                document.createElement("div");
 
-        const category = categories[key];
+            card.className =
+                "homeCard rgb";
 
-        const card =
-            document.createElement("div");
+            card.innerHTML = `
 
-        card.className =
-            "category-card rgb";
+                <div class="emoji">
+                    ${category.icon}
+                </div>
 
-        card.innerHTML = `
-            <div class="category-icon">
-                ${category.icon}
-            </div>
+                <h2>
+                    ${escapeHTML(category.name)}
+                </h2>
 
-            <h2>${category.name}</h2>
+                <p>
+                    ${category.products.length}
+                    قطعه نمونه
+                </p>
 
-            <p>
-                ${category.products.length}
-                قطعه نمونه
-            </p>
-        `;
+            `;
 
-        card.onclick = () => {
-            openCategory(key);
-        };
+            card.addEventListener(
+                "click",
+                () => openCategory(key)
+            );
 
-        container.appendChild(card);
-    });
+            grid.appendChild(card);
+
+        });
+
 }
 
+// =====================================================
+// OPEN CATEGORY
+// =====================================================
 
-// ==========================================
-// CATEGORY PAGE
-// ==========================================
-
-function openCategory(categoryKey) {
+function openCategory(key) {
 
     const category =
-        categories[categoryKey];
+        categories[key];
 
     if (!category) return;
 
-    document.getElementById("categoryTitle")
-        .textContent = category.name;
+    const title =
+        document.getElementById("productsTitle");
 
-    document.getElementById("search").value = "";
+    if (title) {
+
+        title.textContent =
+            category.name;
+
+    }
+
+    const search =
+        document.getElementById("search");
+
+    if (search) {
+
+        search.value = "";
+
+    }
 
     showPage("products");
 
-    renderProducts(category.products);
+    renderProducts(category.products, key);
+
 }
 
+// =====================================================
+// PRODUCTS
+// =====================================================
 
-function renderProducts(products) {
+let currentCategory = null;
 
-    const container =
-        document.getElementById("productList");
+function renderProducts(products, categoryKey) {
 
-    container.innerHTML = "";
+    const grid =
+        document.getElementById("productsGrid");
 
-    if (products.length === 0) {
+    if (!grid) return;
 
-        container.innerHTML = `
-            <div class="result">
-                قطعه‌ای پیدا نشد 😢
+    if (categoryKey) {
+
+        currentCategory =
+            categoryKey;
+
+    }
+
+    grid.innerHTML = "";
+
+    if (!products.length) {
+
+        grid.innerHTML = `
+            <div class="homeCard rgb">
+                <h2>😢 چیزی پیدا نشد</h2>
+                <p>عبارت دیگری را امتحان کن.</p>
             </div>
         `;
 
         return;
     }
 
-    products.forEach((product, index) => {
+    products.forEach(product => {
 
         const card =
             document.createElement("div");
 
         card.className =
-            "product-card rgb";
+            "homeCard rgb";
 
-        let specs = "";
+        let specsHTML = "";
 
-        Object.keys(product.specs)
-            .forEach(key => {
+        Object.entries(product.specs)
+            .forEach(([name, value]) => {
 
-                specs += `
+                if (name === "امتیاز") return;
+
+                specsHTML += `
                     <p>
-                        <strong>${key}:</strong>
-                        ${product.specs[key]}
+                        <strong>
+                            ${escapeHTML(name)}:
+                        </strong>
+                        ${escapeHTML(String(value))}
                     </p>
                 `;
+
             });
 
+        const score =
+            product.specs.امتیاز || 0;
+
         card.innerHTML = `
-            <h3>${product.name}</h3>
 
-            ${specs}
-
-            <div class="price">
-                💰 ${product.price}
+            <div class="emoji">
+                ${categories[currentCategory]?.icon || "🧩"}
             </div>
 
-            <div class="product-actions">
+            <h2>
+                ${escapeHTML(product.name)}
+            </h2>
 
-                <button onclick="selectForCompare('${product.name}')">
-                    ⚔️ مقایسه
-                </button>
+            ${specsHTML}
 
-                <button onclick="showProductInfo('${product.name}')">
-                    ℹ️ مشخصات
-                </button>
+            <p>
+                ⭐ امتیاز:
+                <strong>${score}/100</strong>
+            </p>
 
-            </div>
+            <p>
+                💰 ${escapeHTML(product.price)}
+            </p>
+
+            <button
+                class="mainButton"
+                data-product="${escapeHTML(product.name)}"
+            >
+                ⚔️ مقایسه
+            </button>
+
         `;
 
-        container.appendChild(card);
+        const button =
+            card.querySelector("button");
+
+        button.addEventListener(
+            "click",
+            event => {
+
+                event.stopPropagation();
+
+                selectForCompare(
+                    product.name,
+                    currentCategory
+                );
+
+            }
+        );
+
+        grid.appendChild(card);
+
     });
+
 }
 
-
-// ==========================================
+// =====================================================
 // SEARCH
-// ==========================================
+// =====================================================
 
-function searchProducts() {
+function searchProduct() {
 
-    const search =
-        document.getElementById("search")
-            .value
-            .toLowerCase();
+    if (!currentCategory) return;
 
-    const categoryName =
-        document.getElementById("categoryTitle")
-            .textContent;
+    const input =
+        document.getElementById("search");
 
-    let products = [];
+    const query =
+        input
+            ? input.value.trim().toLowerCase()
+            : "";
 
-    Object.values(categories).forEach(category => {
+    const products =
+        categories[currentCategory].products;
 
-        if (category.name === categoryName) {
-            products = category.products;
-        }
-    });
-
-    const filtered =
+    const result =
         products.filter(product =>
             product.name
                 .toLowerCase()
-                .includes(search)
+                .includes(query)
         );
 
-    renderProducts(filtered);
+    renderProducts(
+        result,
+        currentCategory
+    );
+
 }
 
-
-// ==========================================
-// PRODUCT INFO
-// ==========================================
-
-function showProductInfo(name) {
-
-    let product = null;
-
-    Object.values(categories).forEach(category => {
-
-        const found =
-            category.products.find(
-                p => p.name === name
-            );
-
-        if (found) {
-            product = found;
-        }
-    });
-
-    if (!product) return;
-
-    let message =
-        "📦 " + product.name + "\n\n";
-
-    Object.entries(product.specs)
-        .forEach(([key, value]) => {
-
-            message +=
-                key + ": " + value + "\n";
-        });
-
-    alert(message);
-}
-
-
-// ==========================================
-// COMPARE SYSTEM
-// ==========================================
+// =====================================================
+// COMPARE
+// =====================================================
 
 function loadCompareCategories() {
 
@@ -819,281 +868,419 @@ function loadCompareCategories() {
 
     select.innerHTML = "";
 
-    Object.keys(categories).forEach(key => {
+    Object.entries(categories)
+        .forEach(([key, category]) => {
 
-        const option =
-            document.createElement("option");
+            const option =
+                document.createElement("option");
 
-        option.value = key;
+            option.value = key;
 
-        option.textContent =
-            categories[key].name;
+            option.textContent =
+                category.name;
 
-        select.appendChild(option);
-    });
+            select.appendChild(option);
 
-    loadCompareProducts();
+        });
+
+    loadCompare();
+
 }
 
+function loadCompare() {
 
-function loadCompareProducts() {
+    const categorySelect =
+        document.getElementById("compareCategory");
+
+    if (!categorySelect) return;
 
     const categoryKey =
-        document.getElementById("compareCategory")
-            .value;
+        categorySelect.value;
 
-    const products =
-        categories[categoryKey].products;
+    const category =
+        categories[categoryKey];
+
+    if (!category) return;
 
     const selects = [
-        document.getElementById("compare1"),
-        document.getElementById("compare2"),
-        document.getElementById("compare3")
+
+        document.getElementById("compareOne"),
+
+        document.getElementById("compareTwo"),
+
+        document.getElementById("compareThree")
+
     ];
 
     selects.forEach(select => {
 
         if (!select) return;
 
-        select.innerHTML = "";
+        const isThird =
+            select.id === "compareThree";
 
-        if (select.id === "compare3") {
+        select.innerHTML =
+            isThird
+                ? `<option value="-1">
+                     بدون قطعه سوم
+                   </option>`
+                : "";
 
-            const none =
-                document.createElement("option");
+        category.products.forEach(
+            (product, index) => {
 
-            none.value = "-1";
-            none.textContent =
-                "بدون قطعه سوم";
+                const option =
+                    document.createElement("option");
 
-            select.appendChild(none);
-        }
+                option.value =
+                    index;
 
-        products.forEach((product, index) => {
+                option.textContent =
+                    product.name;
 
-            const option =
-                document.createElement("option");
+                select.appendChild(option);
 
-            option.value = index;
+            }
+        );
 
-            option.textContent =
-                product.name;
-
-            select.appendChild(option);
-        });
     });
+
 }
 
-
-function compareProducts() {
+function runCompare() {
 
     const categoryKey =
-        document.getElementById("compareCategory")
-            .value;
+        document.getElementById("compareCategory").value;
 
-    const products =
-        categories[categoryKey].products;
+    const category =
+        categories[categoryKey];
 
-    const indexes = [
-        Number(document.getElementById("compare1").value),
-        Number(document.getElementById("compare2").value)
-    ];
+    const one =
+        Number(
+            document.getElementById("compareOne").value
+        );
 
-    const third =
-        Number(document.getElementById("compare3").value);
+    const two =
+        Number(
+            document.getElementById("compareTwo").value
+        );
 
-    if (third >= 0) {
-        indexes.push(third);
+    const three =
+        Number(
+            document.getElementById("compareThree").value
+        );
+
+    if (
+        one === two ||
+        (three >= 0 && (three === one || three === two))
+    ) {
+
+        alert(
+            "برای مقایسه، قطعات متفاوت انتخاب کن 🙂"
+        );
+
+        return;
     }
 
-    const selected =
-        indexes.map(index => products[index]);
+    const selected = [
+        category.products[one],
+        category.products[two]
+    ];
 
-    const winner =
-        selected.reduce((best, current) => {
+    if (three >= 0) {
 
-            const bestScore =
-                Number(best.specs.امتیاز || 0);
+        selected.push(
+            category.products[three]
+        );
 
-            const currentScore =
-                Number(current.specs.امتیاز || 0);
-
-            return currentScore > bestScore
-                ? current
-                : best;
-
-        });
+    }
 
     const result =
         document.getElementById("compareResult");
 
     result.innerHTML = "";
 
-    selected.forEach(product => {
+    const winner =
+        [...selected].sort(
+            (a, b) =>
+                Number(b.specs.امتیاز || 0)
+                -
+                Number(a.specs.امتیاز || 0)
+        )[0];
 
-        const score =
-            Number(product.specs.امتیاز || 0);
+    selected.forEach(product => {
 
         const div =
             document.createElement("div");
 
         div.className =
-            "compare-item " +
-            (product === winner ? "winner" : "");
+            "homeCard rgb";
+
+        let specs = "";
+
+        Object.entries(product.specs)
+            .forEach(([key, value]) => {
+
+                specs += `
+                    <p>
+                        <strong>
+                            ${escapeHTML(key)}:
+                        </strong>
+                        ${escapeHTML(String(value))}
+                    </p>
+                `;
+
+            });
+
+        const isWinner =
+            product === winner;
 
         div.innerHTML = `
-            <h2>${product.name}</h2>
 
-            <div class="score">
-                ${score}/100
+            <div class="emoji">
+                ${isWinner ? "🏆" : "🧩"}
             </div>
 
+            <h2>
+                ${escapeHTML(product.name)}
+            </h2>
+
+            ${specs}
+
             ${
-                product === winner
-                ? "<strong>🏆 برنده مقایسه</strong>"
-                : ""
+                isWinner
+                    ? `
+                        <h3>
+                            🏆 برنده این مقایسه
+                        </h3>
+                      `
+                    : ""
             }
+
         `;
 
         result.appendChild(div);
+
     });
+
 }
 
+// =====================================================
+// SELECT PRODUCT FOR COMPARISON
+// =====================================================
 
-function selectForCompare(name) {
+function selectForCompare(
+    productName,
+    categoryKey
+) {
 
     showPage("compare");
-
-    loadCompareCategories();
 
     const categorySelect =
         document.getElementById("compareCategory");
 
-    let categoryKey = null;
+    if (!categorySelect) return;
 
-    Object.entries(categories)
-        .forEach(([key, category]) => {
+    categorySelect.value =
+        categoryKey;
 
-            if (
-                category.products
-                    .some(product => product.name === name)
-            ) {
-                categoryKey = key;
-            }
-        });
+    loadCompare();
 
-    if (!categoryKey) return;
+    const productIndex =
+        categories[categoryKey]
+            .products
+            .findIndex(
+                product =>
+                    product.name === productName
+            );
 
-    categorySelect.value = categoryKey;
+    const one =
+        document.getElementById("compareOne");
 
-    loadCompareProducts();
+    if (one && productIndex >= 0) {
 
-    const products =
-        categories[categoryKey].products;
+        one.value =
+            productIndex;
 
-    const index =
-        products.findIndex(
-            product => product.name === name
-        );
+    }
 
-    document.getElementById("compare1").value =
-        index;
 }
 
+// =====================================================
+// BUILD COMPUTER
+// =====================================================
 
-// ==========================================
-// COMPATIBILITY
-// ==========================================
-
-function checkCompatibility() {
+function checkBuild() {
 
     const cpu =
-        document.getElementById("cpu").value;
+        document.getElementById("buildCPU").value;
+
+    const gpu =
+        document.getElementById("buildGPU").value;
 
     const ram =
-        document.getElementById("ram").value;
+        document.getElementById("buildRAM").value;
+
+    const ssd =
+        document.getElementById("buildSSD").value;
+
+    const psu =
+        document.getElementById("buildPSU").value;
+
+    const cooler =
+        document.getElementById("buildCooler").value;
+
+    let warnings = [];
+    let good = [];
+
+    // CPU / RAM platform
+
+    if (
+        cpu.includes("7600") &&
+        ram.includes("DDR4")
+    ) {
+
+        warnings.push(
+            "⚠️ Ryzen 5 7600 به مادربرد AM5 و RAM DDR5 نیاز دارد."
+        );
+
+    } else {
+
+        good.push(
+            "✅ ترکیب CPU و RAM قابل بررسی است."
+        );
+
+    }
+
+    // GPU / PSU
+
+    if (
+        gpu.includes("4060") &&
+        psu.includes("550W")
+    ) {
+
+        good.push(
+            "✅ پاور 550W برای این نمونه کافی است."
+        );
+
+    }
+
+    if (
+        gpu.includes("RX 7600") &&
+        psu.includes("550W")
+    ) {
+
+        good.push(
+            "✅ پاور 550W برای این نمونه مناسب است."
+        );
+
+    }
+
+    // SSD
+
+    if (ssd) {
+
+        good.push(
+            "✅ حافظه SSD انتخاب شد."
+        );
+
+    }
+
+    // Cooler
+
+    if (cooler) {
+
+        good.push(
+            "🌬️ خنک‌کننده انتخاب شد."
+        );
+
+    }
 
     const result =
-        document.getElementById("compatibility");
+        document.getElementById("buildResult");
 
-    let compatible = true;
-
-    let messages = [];
-
-    // CPU / Motherboard examples
-
-    if (
-        cpu.includes("5600")
-    ) {
-        messages.push("CPU روی پلتفرم AM4 است.");
-    }
-
-    if (
-        cpu.includes("12400")
-    ) {
-        messages.push("CPU روی سوکت LGA1700 است.");
-    }
-
-    if (
-        cpu.includes("7600")
-    ) {
-        messages.push("CPU روی پلتفرم AM5 است.");
-    }
-
-    // RAM
-
-    if (ram.includes("DDR4")) {
-        messages.push("RAM انتخابی DDR4 است.");
-    }
-
-    if (ram.includes("DDR5")) {
-        messages.push("RAM انتخابی DDR5 است.");
-    }
-
-    if (ram.includes("DDR5") && cpu.includes("5600")) {
-        compatible = false;
-        messages.push(
-            "⚠️ این ترکیب در حالت واقعی نیاز به مادربرد مناسب دارد."
-        );
-    }
+    if (!result) return;
 
     result.innerHTML = `
-        <h2>
-            ${
-                compatible
-                ? "✅ بررسی اولیه انجام شد"
-                : "⚠️ نیاز به بررسی بیشتر"
-            }
-        </h2>
 
-        <p>
-            ${messages.join("<br>")}
-        </p>
+        <div class="homeCard rgb">
 
-        <p>
-            💡 این بررسی نمونه‌ای است؛
-            سازگاری واقعی باید بر اساس مدل دقیق مادربرد،
-            CPU و RAM بررسی شود.
-        </p>
+            <h2>
+                🛠️ سیستم پیشنهادی تو
+            </h2>
+
+            <p>
+                🧠 CPU:
+                <strong>${escapeHTML(cpu)}</strong>
+            </p>
+
+            <p>
+                🎮 GPU:
+                <strong>${escapeHTML(gpu)}</strong>
+            </p>
+
+            <p>
+                🧮 RAM:
+                <strong>${escapeHTML(ram)}</strong>
+            </p>
+
+            <p>
+                💾 SSD:
+                <strong>${escapeHTML(ssd)}</strong>
+            </p>
+
+            <p>
+                ⚡ PSU:
+                <strong>${escapeHTML(psu)}</strong>
+            </p>
+
+            <p>
+                🌬️ Cooler:
+                <strong>${escapeHTML(cooler)}</strong>
+            </p>
+
+            <hr>
+
+            ${good.map(item => `<p>${item}</p>`).join("")}
+
+            ${warnings.map(item => `
+                <p>${item}</p>
+            `).join("")}
+
+            <p>
+                💡 برای سازگاری صددرصدی،
+                مدل دقیق مادربرد هم باید انتخاب شود.
+            </p>
+
+        </div>
+
     `;
+
 }
 
-
-// ==========================================
-// LIKE
-// ==========================================
+// =====================================================
+// LIKE SYSTEM
+// =====================================================
 
 let likes =
-    Number(localStorage.getItem("computerSiteLikes") || 0);
+    Number(
+        localStorage.getItem(
+            "computerSiteLikes"
+        ) || 0
+    );
 
 function updateLikes() {
 
-    const counter =
-        document.getElementById("likeCount");
+    const element =
+        document.getElementById("likes");
 
-    if (counter) {
-        counter.textContent = likes;
+    if (element) {
+
+        element.textContent =
+            likes;
+
     }
+
 }
 
 function likeSite() {
@@ -1106,36 +1293,48 @@ function likeSite() {
     );
 
     updateLikes();
+
 }
 
-
-// ==========================================
+// =====================================================
 // COMMENTS
-// ==========================================
+// =====================================================
 
 let comments =
     JSON.parse(
-        localStorage.getItem("computerSiteComments") || "[]"
+        localStorage.getItem(
+            "computerSiteComments"
+        ) || "[]"
     );
-
 
 function addComment() {
 
     const input =
-        document.getElementById("commentText");
+        document.getElementById("comment");
+
+    if (!input) return;
 
     const text =
         input.value.trim();
 
     if (!text) {
 
-        alert("اول کامنتت رو بنویس 😄");
+        alert(
+            "اول کامنتت رو بنویس 😄"
+        );
+
         return;
+
     }
 
     comments.push({
+
         text: text,
-        date: new Date().toLocaleString("fa-IR")
+
+        date:
+            new Date()
+                .toLocaleString("fa-IR")
+
     });
 
     localStorage.setItem(
@@ -1146,8 +1345,8 @@ function addComment() {
     input.value = "";
 
     renderComments();
-}
 
+}
 
 function renderComments() {
 
@@ -1158,27 +1357,52 @@ function renderComments() {
 
     container.innerHTML = "";
 
-    comments.forEach(comment => {
+    if (!comments.length) {
 
-        const div =
-            document.createElement("div");
-
-        div.className = "comment";
-
-        div.innerHTML = `
-            💬 ${escapeHTML(comment.text)}
-            <br>
-            <small>${comment.date}</small>
+        container.innerHTML = `
+            <p>
+                هنوز کامنتی ثبت نشده.
+                اولین نفر باش! 😎
+            </p>
         `;
 
-        container.appendChild(div);
-    });
+        return;
+
+    }
+
+    comments
+        .slice()
+        .reverse()
+        .forEach(comment => {
+
+            const div =
+                document.createElement("div");
+
+            div.className =
+                "homeCard";
+
+            div.innerHTML = `
+
+                <p>
+                    💬
+                    ${escapeHTML(comment.text)}
+                </p>
+
+                <small>
+                    ${escapeHTML(comment.date)}
+                </small>
+
+            `;
+
+            container.appendChild(div);
+
+        });
+
 }
 
-
-// ==========================================
+// =====================================================
 // SUPPORT
-// ==========================================
+// =====================================================
 
 function sendSupport() {
 
@@ -1188,47 +1412,81 @@ function sendSupport() {
     const result =
         document.getElementById("supportResult");
 
-    if (!input.value.trim()) {
+    if (!input || !result) return;
 
-        result.textContent =
-            "لطفاً مشکل خودت را بنویس.";
+    const text =
+        input.value.trim();
+
+    if (!text) {
+
+        result.innerHTML = `
+            <p>
+                ⚠️ لطفاً مشکلت را بنویس.
+            </p>
+        `;
 
         return;
+
     }
 
-    result.innerHTML =
-        "✅ درخواست پشتیبانی ثبت شد. ممنون که اطلاع دادی!";
+    result.innerHTML = `
+
+        <div class="homeCard rgb">
+
+            <h2>
+                ✅ پیام دریافت شد
+            </h2>
+
+            <p>
+                ممنون که مشکل را گزارش کردی.
+            </p>
+
+            <p>
+                📝 پیام تو ثبت شد.
+            </p>
+
+        </div>
+
+    `;
 
     input.value = "";
+
 }
 
-
-// ==========================================
+// =====================================================
 // SECURITY
-// ==========================================
+// =====================================================
 
 function escapeHTML(text) {
 
-    const div =
+    const element =
         document.createElement("div");
 
-    div.textContent = text;
+    element.textContent =
+        text;
 
-    return div.innerHTML;
+    return element.innerHTML;
+
 }
 
+// =====================================================
+// STARTUP
+// =====================================================
 
-// ==========================================
-// START
-// ==========================================
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-document.addEventListener("DOMContentLoaded", () => {
+        updateLikes();
 
-    updateLikes();
-    renderComments();
+        renderComments();
 
-    console.log(
-        "⚡ Computer Site 1.0 Loaded Successfully"
-    );
+        // صفحه اصلی
+        showPage("home");
 
-});
+        console.log(
+            "⚡ Computer Site 1.0 is running!"
+        );
+
+    }
+);
